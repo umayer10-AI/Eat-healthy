@@ -16,7 +16,6 @@ body{
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    border: 2px solid red;
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -70,7 +69,6 @@ body{
     background-image: url('image/shapes/Frame\ 57.jpg');
     background-size: cover;
     margin-bottom: 72px;
-    border: 2px solid blue;
 }
 #mid-content .a img{
     height: 500px;
@@ -216,4 +214,83 @@ footer .a p{
     color: #FFFFFF;
     font-size: 1rem;
     line-height: 26px;
+}
+.hide{
+    display: none!important;
+}
+
+@media screen and (max-width: 576px) {
+    *{
+        box-sizing: border-box;
+        max-width: 576px;
+        margin: 0;
+        padding: 0;
+    }
+    #header{
+        max-width: 425px;
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 0;
+        padding: 0;
+    }
+    .head-content{
+        width: 350px;
+        text-align: center;
+    }
+    .head-content h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .head-content p{
+        margin-bottom: 20px;
+    }
+    .head-content button{
+        font-size: 14px;
+        padding: 11px 22px;
+    }
+    .img-content img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+    *{
+        box-sizing: border-box;
+        max-width: 768px;
+        margin: 0;
+        padding: 0;
+    }
+    #header{
+        max-width: 768px;
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 0;
+        padding: 0;
+    }
+    .head-content{
+        text-align: center;
+    }
+    .head-content h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .head-content p{
+        margin-bottom: 20px;
+    }
+    .head-content button{
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+    .img-content img{
+        height: 60%;
+        width: 60%;
+    }
+    .img-content{
+        display: flex;
+        justify-content: center;
+    }
 }
